@@ -11,7 +11,7 @@ For further reading check out:
 ## Features
   - This contract allows a user to delegate their vote to any other user.
   - Right now, each user is allocated one vote.
-  - To initiate a function the total votes for that function must be above the threshold that is set by the contructor.
+  - To initiate a function, the total votes for that function must be above the threshold that is set by the contructor.
   - Each function call creates a unique voteID, which can be voted on by the users.
   - If the vote passes the threshold, anyone can execute the function.
   - There is no time limit on the votes. This can easily be changed but I don't see a compelling reason to do so.
