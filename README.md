@@ -9,7 +9,8 @@ For further reading check out:
   
 
 ## Features
-  - This contract allows a user to delegate their vote to any other user. 
+  - This contract allows a user to delegate their vote to any other user.
+  - Right now, each user is allocated one vote.
   - To initiate a function the total votes for that function must be above the threshold that is set by the contructor.
   - Each function call creates a unique voteID, which can be voted on by the users.
   - If the vote passes the threshold, anyone can execute the function.
@@ -26,4 +27,9 @@ For further reading check out:
    - Potentially, you could rewrite the contract to only loop through top delegates votes. There is some extra overhead in constantly calculating who needs to be added and removed from the list. And it wouldn't help in the scenario where no one delgates their votes.
     
  ## Things to Add
+  - Right now, any user can add another user. This means that an organization can easily be taken over by a bad actor who creates many accounts. However, you could vote to add users or do a staking mechanism where a user can stake ether or some reputation token that the user forfeits if his or her recruit is a bad actor.
   - One could make it so you can delegate to different users for different issues. You would just need different contracts that contains functions related to budget or investing, one for handling the administration, or for anything else within the power of the DAO.
+  - Currently, the contract functions as one user, one vote. Potentially, you could do one token, one vote. Beyond any questions on whether that is fair to users, there is the difficulty of updating the votes controlled by each top delegate when tokens are transferred between users. Furthermore, it could be pretty expensive to transfer tokens if you have to iterate through all the delegates and delegators to do so.
+  
+## Notes
+Undoubtadly, liquid democracy adds a lot of complexity that can be computationally expensive on the EVM. As it stands, these contracts are only useful for small organizations.
