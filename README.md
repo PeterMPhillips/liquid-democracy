@@ -33,3 +33,7 @@ For further reading check out:
   
 ## Notes
 Undoubtadly, liquid democracy adds a lot of complexity that can be computationally expensive on the EVM. As it stands, these contracts are only useful for small organizations.
+
+Potentially, one could expand the scope and size of an organzation by having a hierarchy of these LiquidDAOs where users within the DAO have a liquid democratic vote for what vote the LiquidDAO will make. The hierachy could be also have a liquid democratic structure. One could potentially have any number of levels of DAOs within DAOs.
+
+In this scenario, a DAO's vote power could be weighted by how many of the users voted for the decision. And at that point, the organization would essentially be a neural network of DAOs.
