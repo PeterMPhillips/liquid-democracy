@@ -22,8 +22,7 @@ For further reading check out:
   - Recursively iterating over every user and their tree of delegators when calculating the vote tally quickly gets an out of gas error. However, we can more easily keep a record of the current top delegates and the number of votes they control. This is accomplished by updating the list every time someone changes their delegate. The contract calculates how many votes the user controls, removes them from their current top delegate, and adds them to their new top delegate.
   - The contract also prevents an infinite loop of delegates by checking that all the higher level delegates are never the user doing the delegating.
    ### Loops
-   - There is a limit to the total number of users that can use this contract. When calculating whether a vote succeeds, we have to loop through the userVotes list.
-   - If that list is large, we get an out of gas error. The contract currently works with 200 members. I'm unsure what the physical limit is.
+   - There is a limit to the total number of users that can use this contract. When calculating whether a vote succeeds, we have to loop through the userVotes list. If that list is large, we get an out of gas error. The contract currently works with 200 members. I'm unsure what the physical limit is.
    - Potentially, you could rewrite the contract to only loop through top delegates votes. There is some extra overhead in constantly calculating who needs to be added and removed from the list. And it wouldn't help in the scenario where no one delgates their votes.
     
  ## Things to Add
