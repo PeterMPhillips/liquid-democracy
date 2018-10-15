@@ -5,7 +5,8 @@ A contract that handles delegation of votes using a liquid democracy model
 Liquid democracy is a fusion between direct democracy and representative democracy where votes can directly vote on issues or delegate their vote to any other user.
 
 For further reading check out:
-  - [Dominik Schiener on Medium](https://medium.com/organizer-sandbox/liquid-democracy-true-democracy-for-the-21st-century-7c66f5e53b6f)
+  - [Delegative Democracy (Wikipedia)](https://en.wikipedia.org/wiki/Delegative_democracy)
+  - [Liquid Democracy by Dominik Schiener (Medium)](https://medium.com/organizer-sandbox/liquid-democracy-true-democracy-for-the-21st-century-7c66f5e53b6f)
   
 
 ## Features
